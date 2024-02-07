@@ -1,8 +1,9 @@
 #pragma once
 #include "include.h"
 
-struct vector3
+class vector3
 {
+public:
 	float x, y, z;
 };
 

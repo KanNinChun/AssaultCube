@@ -6,48 +6,39 @@ using namespace offset;
 
 DWORD Local::get_LocalPlayer()
 {
-	return clientAddress + offset::localPlayer;
+	return mem.rpm<DWORD>(clientAddress + offset::localPlayer);
 }
 
 int Local::get_Health()
 {
-	return clientAddress + health;
+	return mem.rpm<int>(clientAddress + health);
 }
 
 int Local::get_Armor()
 {
-	return clientAddress + armor;
+	return mem.rpm<int>(clientAddress + armor);
 }
 
 int Local::get_AARD_ammo()
 {
-	return clientAddress + a_ard_ammo;
+	return mem.rpm<int>(clientAddress + a_ard_ammo);
 }
 
 int Local::get_Mtp57_ammo()
 {
-	return clientAddress + m_mtp57_ammo;
+	return mem.rpm<int>(clientAddress + m_mtp57_ammo);
 }
 
 int Local::get_Frags()
 {
-	return clientAddress + frags;
+	return mem.rpm<int>(clientAddress + frags);
 }
 
 int Local::get_Deaths()
 {
-	return clientAddress + deaths;
+	return mem.rpm<int>(clientAddress + deaths);
 }
 
-vector3 Local::get_feetpos()
-{
-	return vector3(clientAddress + feetpos_x, clientAddress + feetpos_y, clientAddress + feetpos_z);
-}
-
-vector3 Local::get_camerapos()
-{
-	return vector3(clientAddress + camerapos_x, clientAddress + camerapos_y, clientAddress + camerapos_z);
-}
 
 DWORD Entity::getEntityList()
 {

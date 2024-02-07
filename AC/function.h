@@ -1,11 +1,10 @@
 #pragma once
 #include "getValue.h"
 
-int set_Health();
-int set_Armor();
-int set_AARD_ammo();
-int set_Mtp57_ammo();
-int set_Frags();
-int set_Deaths();
-vector3 setfeetpos();
-vector3 getcamerapos();
+void set_Health();
+void set_Armor();
+void set_AARD_ammo();
+void set_Mtp57_ammo();
+void set_Frags();
+void set_Deaths();
+void set_feetpos();
