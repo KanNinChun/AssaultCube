@@ -39,6 +39,10 @@ int Local::get_Deaths()
 	return mem.rpm<int>(clientAddress + deaths);
 }
 
+vector3 Local::get_camerapos()
+{
+	return vector3(clientAddress + camerapos_x, clientAddress + camerapos_y, clientAddress + camerapos_z);
+}
 
 DWORD Entity::getEntityList()
 {
