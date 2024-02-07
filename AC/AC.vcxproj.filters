@@ -16,6 +16,15 @@
     <Filter Include="資源檔\Memory">
       <UniqueIdentifier>{8e572e25-5d1a-4add-9fd4-549fd7a9918b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="資源檔\Offset">
+      <UniqueIdentifier>{94444c74-f0d1-462b-9bb3-a95e1b9dcde2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="資源檔\GetValue">
+      <UniqueIdentifier>{15dc34d4-16ad-4150-8b56-f5cd3cd1458f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="資源檔\Function">
+      <UniqueIdentifier>{b38120d4-4914-4e21-a959-3d779674c5f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,6 +33,15 @@
     <ClCompile Include="Memory.cpp">
       <Filter>資源檔\Memory</Filter>
     </ClCompile>
+    <ClCompile Include="getValue.cpp">
+      <Filter>資源檔\GetValue</Filter>
+    </ClCompile>
+    <ClCompile Include="offsets.h">
+      <Filter>資源檔\Offset</Filter>
+    </ClCompile>
+    <ClCompile Include="function.cpp">
+      <Filter>資源檔\Function</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h">
@@ -31,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="Memory.h">
       <Filter>資源檔\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="getValue.h">
+      <Filter>資源檔\GetValue</Filter>
+    </ClInclude>
+    <ClInclude Include="function.h">
+      <Filter>資源檔\Function</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

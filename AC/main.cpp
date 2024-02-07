@@ -3,7 +3,7 @@
 
 int main()
 {
-	procID = GetProcessID(L"ac_client.exe");
+	procID		  = GetProcessID(L"ac_client.exe");
 	clientAddress = GetModuleBaseAddress(L"ac_client.exe");
 
 	#ifdef DEBUG
@@ -12,6 +12,10 @@ int main()
 		std::cout << "[+]Build Date: " << build_date << std::endl;
 	#endif // DEBUG
 
-	std::cin.get();
+	while (!GetAsyncKeyState(VK_INSERT))
+	{
+		if()
+	}
+
 	return 0;
 }

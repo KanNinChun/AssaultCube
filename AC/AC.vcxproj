@@ -130,10 +130,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="function.cpp" />
+    <ClCompile Include="getValue.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="offsets.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="function.h" />
+    <ClInclude Include="getValue.h" />
     <ClInclude Include="include.h" />
     <ClInclude Include="Memory.h" />
   </ItemGroup>
